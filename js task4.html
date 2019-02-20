@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>js task4</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<style>
+	#N1 {
+		border-radius: 10px;
+		height: 30px;
+		border-color: purple;
+		text-align: center;
+		font-size: 18px;
+	}
+	
+#N2 {
+		border-radius: 10px;
+		height: 30px;
+		border-color: purple;
+		text-align: center;
+		font-size: 18px;
+	}
+
+
+
+</style>
+<body>
+	<div class="container-fluid text-center">
+		<div class="row bg-danger">
+			<div class="col-lg-12 col-md-12 col-sm-12" >
+		<h2>DISPLAY MAX & MIN VALUE</h2>
+	</div>
+</div>
+		<br>
+		<div class="row">
+		<div clas="col-lg-12 col-md-12 col-sm-12">
+	<b>N1:	</b><input type="text" id="N1" name="N1">
+	<br>
+	<br>
+	<b>N2:	</b><input type="text" id="N2"name="N2">
+     <br>
+     <br>
+	<button type="button" onclick="myFunction()"  class="btn btn-primary">SUBMIT</button>
+	<br>
+	<br>
+ 
+ <p id="demo"></p>
+</div>
+</div>
+</div>
+
+
+
+
+<script>
+	function myFunction() {
+      
+
+      var N1=document.getElementById("N1").value;
+      var N2=document.getElementById("N2").value;
+      
+      if (N1>N2) {
+      	var Number1=N1
+        var Number2=N2
+        console.log(N1)
+        console.log(N2)
+	
+  document.getElementById("demo").innerHTML=
+  "max :" + N1  + "<br>" + "min :" +  N2 ;
+		
+		console.log(N1,N2)
+		}	
+}
+</script>
+
+</body>
+</html>
+
+
+
