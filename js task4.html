@@ -44,7 +44,9 @@
 	<b>N2:	</b><input type="text" id="N2"name="N2">
      <br>
      <br>
-	<button type="button" onclick="myFunction()"  class="btn btn-primary">SUBMIT</button>
+	<button type="button" onclick="myFunction()"  class="btn btn-primary">Max</button>
+		<button type="button" onclick="myFunction1()"  class="btn btn-primary">Min</button>
+
 	<br>
 	<br>
  
@@ -60,20 +62,28 @@
 	function myFunction() {
       
 
-      var N1=document.getElementById("N1").value;
-      var N2=document.getElementById("N2").value;
-      
+      var N1=Number(document.getElementById("N1").value);
+      var N2=Number(document.getElementById("N2").value);
+      var text =''
       if (N1>N2) {
-      	var Number1=N1
-        var Number2=N2
-        console.log(N1)
-        console.log(N2)
-	
-  document.getElementById("demo").innerHTML=
-  "max :" + N1  + "<br>" + "min :" +  N2 ;
-		
-		console.log(N1,N2)
-		}	
+        text  = N1
+      }	else{
+      	text = N2
+      }
+      document.getElementById('demo').innerHTML = text
+}
+function myFunction1(){
+	 var N1= Number(document.getElementById("N1").value);
+      var N2=Number(document.getElementById("N2").value);
+      
+      var text =''
+      if (N1<N2) {
+        text  = N1
+      }	else{
+      	text = N2
+      }
+      document.getElementById('demo').innerHTML = text
+      	
 }
 </script>
 
